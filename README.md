@@ -3,17 +3,11 @@
 Real-time tennis ball tracking using OpenCV trackers (CSRT/KCF)
 and HSV color segmentation.
 
-**Group G5 — Image Processing Module — FST Errachidia**
-- BOUKOTOS Akram
-- BOUTAHIR Younes
-
-**Supervisor :** Prof. Ahmad EL ALLAOUI — 2025/2026
-
 ---
 
 ## Demo
 
-> Select a video → click LAUNCH → draw rectangle around ball → tracking starts
+https://github.com/boutahir-younes/Tracker_OpenCV/raw/main/Videos/demo.mp4
 
 ---
 
@@ -25,7 +19,7 @@ and HSV color segmentation.
 | 2 | Gaussian filter (noise reduction) | CHAP 2 |
 | 3 | BGR → HSV color conversion | CHAP 1+3 |
 | 4 | HSV thresholding → binary mask | CHAP 3 |
-| 5 | Morphology (erosion + dilation) | CHAP 4 |
+| 5 | Morphology — erosion + dilation | CHAP 4 |
 | 6 | Contours + Bounding box | CHAP 5 |
 | 7 | CSRT / KCF Tracker | CHAP 1+5 |
 
@@ -35,15 +29,15 @@ and HSV color segmentation.
 
 | Method | How | Advantage |
 |--------|-----|-----------|
-| Manual (ROI) | User draws rectangle around ball | Works with any object |
+| Manual (ROI) | Draw a rectangle around the ball | Works with any object |
 | HSV Color | Automatic yellow-green detection | Fully automatic |
 
 ---
 
 ## Tracker Comparison
 
-| Tracker | Speed | Accuracy | Our choice |
-|---------|-------|----------|-----------|
+| Tracker | Speed | Accuracy | Choice |
+|---------|-------|----------|--------|
 | CSRT (2017) | ~25 fps | Very high | ✅ Recommended |
 | KCF (2014) | ~60 fps | Good | For comparison |
 
@@ -63,17 +57,28 @@ python app.py
 
 ---
 
+## How to Use
+
+1.Select a video from the dropdown menu
+2.Click LAUNCH
+3.Draw a rectangle around the ball → press ENTER
+4.Tracking starts on 3 panels simultaneously
+5.Click STOP to stop
+---
+
 ## Project Structure
+
 Tracker_OpenCV/
 ├── app.py        ← Graphical interface (3 panels)
 ├── utils.py      ← Image processing pipeline
 └── Videos/
-├── input_1.mp4
-├── input_2.mp4
-└── input_3.mp4
+  ├── input_1.mp4
+  ├── input_2.mp4
+  ├── input_3.mp4
+  └── demo.mp4
 ---
 
-## Interface — 3 panels
+## Interface — 3 Panels
 
 | Panel | Content |
 |-------|---------|
