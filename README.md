@@ -80,7 +80,6 @@ Tracker_OpenCV/
 │
 └── Videos/
     ├── input_1.mp4     ← Test video 1
-    ├── input_2.mp4     ← Test video 2
     ├── input_3.mp4     ← Test video 3
     └── demo.mp4        ← Demo recording
 ```
